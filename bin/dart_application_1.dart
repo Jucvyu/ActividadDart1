@@ -5,6 +5,9 @@ void main(List<String> arguments) {
   // Se obtiene la fecha en el momento de la ejecución del programa
   final fechaActual = DateTime.now();
 
+  // Se obtiene el país en el que se encuentra el aprendiz
+  const pais = 'Colombia';
+
   // Se solicita al aprendiz el nombre
   stdout.writeln('Ingresa el nombre: ');
   String? nombre = stdin.readLineSync();
@@ -48,6 +51,7 @@ void main(List<String> arguments) {
   */
   if (promedio >= 3.5){
     print('Fecha: $fechaActual');
+    print('País: $pais');
     print("Nombre: $nombre");
     print("Edad: $edad");
     print("Centro de Formación: $centroFormacion");
@@ -57,6 +61,8 @@ void main(List<String> arguments) {
     print('El aprendiz aprobó el curso');
 
   } else if (promedio < 3.5){
+    print('Fecha: $fechaActual');
+    print('País: $pais');
     print("Nombre: $nombre");
     print("Edad: $edad");
     print("Centro de Formación: $centroFormacion");
